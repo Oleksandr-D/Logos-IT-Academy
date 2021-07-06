@@ -18,5 +18,4 @@ document.querySelector('.square').addEventListener('mouseout', function () {
         elementIdx = 0;
     }
 });
-//чому event  заркреслений(Застарілий?) 
-//що використовувати замість  event?           
+//чому event  заркреслений(Застарілий?)що використовувати замість  event?           
