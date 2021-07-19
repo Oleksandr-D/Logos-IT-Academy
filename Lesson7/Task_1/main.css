@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    width: 50%;
+    height: 20%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    margin-left: 10%;
+}
+
+.wraper {
+    width: 454px;
+    height: 60%;
+    margin: auto;
+    border: 2px solid;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.box7,
+.box8,
+.box9 {
+    width: 150px;
+    height: 100px;
+    border: 2px solid;
+}
+
+.brown {
+    background-color: brown;
+}
+
+.green {
+    background-color: green;
+}
+
+.img1 {
+    background-image: url(https://oir.mobi/uploads/posts/2021-03/1616525300_1-p-krutoi-fon-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img2 {
+    background-image: url(https://avatanplus.com/files/resources/original/59a80db989d9e15e38759cdd.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img3 {
+    background-image: url(https://luxfon.com/images/201203/luxfon.com_8367.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img4 {
+    background-image: url(https://wallpapers-fenix.eu/full/180624/000020532.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img5 {
+    background-image: url(https://p4.wallpaperbetter.com/wallpaper/272/773/203/beautiful-nature-for-desktop-background-1920x1080-wallpaper-preview.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img6 {
+    background-image: url(https://s1.1zoom.ru/big0/244/Scenery_Fields_Sky_Roads_508215.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img7 {
+    background-image: url(https://images8.alphacoders.com/383/383294.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img8 {
+    background-image: url(https://i.obozrevatel.com/gallery/2020/9/22/kartinka-osen-list-rosa.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img9 {
+    background-image: url(https://storge.pic2.me/c/1360x800/362/584870af92b6d.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.grey {
+    background-color: grey;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue
+}
+
+.violet {
+    background-color: violet
+}
+
+.yellow {
+    background-color: yellow
+}
+
+.aqua {
+    background-color: aqua
+}
+
+.hotpink {
+    background-color: hotpink
+}
