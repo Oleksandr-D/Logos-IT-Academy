@@ -4,6 +4,7 @@
 // — при кліку на самі блоки з кольорами змінюється колі фону
 // — при кліку на самі блоки з зображеннями змінюється зображення фону
 // — послідовність чи я задаю колір фону а потім зображення або навпаки не має значення
+
 let bb = document.querySelector('body');
 const show = document.querySelector('.wraper');
 function showCol() {
@@ -94,4 +95,3 @@ function showImg() {
         bb.style.backgroundImage = 'url(https://storge.pic2.me/c/1360x800/362/584870af92b6d.jpg)';
     })
 }
-
