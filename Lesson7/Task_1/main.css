@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    width: 50%;
+    height: 20%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    margin-left: 10%;
+}
+
+.wraper,
+.wraper2 {
+    width: 454px;
+    height: 60%;
+    margin: auto;
+    border: 2px solid;
+    display: flex;
+    flex-wrap: wrap;
+}
+.bg-col,
+.bg-img {
+    width: 150px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
