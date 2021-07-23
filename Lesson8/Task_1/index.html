@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson8_Task1_jsCore</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        [value="move"] {
+            background-color: limegreen;
+            color: white;
+        }
+
+        input {
+            height: 40px;
+            width: 20%;
+            border: 1px solid rgb(206, 206, 206);
+            border-radius: 5px;
+        }
+
+        input:focus {
+            outline: none;
+            border: 1px solid greenyellow;
+            box-shadow: greenyellow 0.2em 0.2em 0.1em;
+            border-radius: 5px;
+        }
+
+        input::placeholder {
+            color: darkgrey
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Task move</h2>
+    <form name="f1">
+        <input type="text" name="login">
+        <input type="button" name="move" value="move">
+        <input type="text" name="movedLogin">
+    </form>
+    <h2>Task placeholder</h2>
+    <form name="f2">
+        <input type="text" name="plh">
+    </form>
+    <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson8_task2_jsCore</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+    <div class="conteiner" style="display: flex">
+        <header class="formElement">Create your account</header>
+        <form name="createAccount" onsubmit="showInfo()">
+            <label>
+                <div class="name">First Name</div>
+                <input type="text" name="fName" placeholder="type here..." required>
+            </label>
+            <label>
+                <div class="sName">Second Name</div>
+                <input type="text" name="seName" placeholder="type here..." required>
+            </label>
+            <label>
+                <div class="email">Email address</div>
+                <input type="email" name="mail" placeholder="enter email" required>
+            </label>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="rad" value="man" id="man" checked>man
+                </label>
+                <label>
+                    <input type="radio" name="rad" value="woman" id="woman">woman
+                </label>
+            </div>
+            <div class="position">Position</div>
+            <select name="pos">
+                <option  value disabled selected>Choose...</option>
+                <option value="Frontend">Frontend</option>
+                <option value="Backend">Backend</option>
+                <option value="QC/QA">QC/QA</option>
+            </select>
+            <div>
+                <input type="checkbox" name="agree" required> I agree all statements of servise
+            </div>
+            <input class="formElement" type="submit" name="signUp" value="Sign Up">
+        </form>
+    </div>
+    <div class="containerInfo" style="display: none;">
+        <form name="userInfo">
+            <div class="infoHed"></div>
+            <div class="manFoto" style="display: none;">
+                <div class="Mimg"></div>
+            </div>
+            <div class="womanFoto" style="display: none;">
+                <div class="Wimg"></div>
+            </div>
+            <div class="userWraper">
+                <span class="userName userSecName"></span>
+                <div class="userMail"></div>
+                <div class="userPosition"></div>
+                <input class="signOut" type="submit" name="signOut" value="Sign Out">
+            </div>
+            <div class="infoFooter"></div>
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
