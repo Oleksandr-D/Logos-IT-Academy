@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson9_Task2_jsCore</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+    <div class="conteiner">
+        <div class="leftSide">
+            <div class="taskList" onclick="removeCheck()">Список завдань
+                <p class="modalWindow" style="display: none;">Попередження!<br>
+                    Останній таск зі списку Ви не можете видалити.
+                    <span class="close" style="background-image: url('./styles/close_black_24dp.svg');"></span>
+                </p>
+                <li><input type="checkbox" name="HTML5">HTML5</li>
+                <li><input type="checkbox" name="CSS">CSS</li>
+                <li><input type="checkbox" name="SASS/SCSS">SASS/SCSS</li>
+                <li><input type="checkbox" name="Bootstrap">Bootstrap</li>
+
+            </div>
+        </div>
+        <div class="ridhtSide">
+            <div class="newTask">Додати нове завдання
+                <form name="addTask">
+                    <input type="text" name="taskText" style="display: block;">
+                    <p class="modalWindow2" style="display: none;">Попередження! <br>
+                        Пусте поле не можна добавити.
+                        <span class="close2" style="background-image: url('./styles/close_black_24dp.svg');"></span>
+                    </p>
+                    <input type="button" name="add" value="Додати" style="display:block;" onclick="addTasks()">
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

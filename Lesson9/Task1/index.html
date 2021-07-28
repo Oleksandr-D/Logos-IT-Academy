@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson9_Task1_jsCore</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .slide {
+            width: 100%;
+            height: 720px;
+            background-color: lightgrey;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        .sl1Text {
+            font-size: 30px;
+            margin-bottom: 200px;
+        }
+
+        .slide2 {
+            width: 100%;
+            height: 720px;
+            background-color: white;
+        }
+
+        .slide3 {
+            width: 100%;
+            height: 720px;
+            background-color: lightgrey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .slLeft {
+            width: 300px;
+            font-size: 40px;
+            position: relative;
+            left: 50px;
+            margin-top: 55px;
+
+        }
+
+        .line {
+            width: 250px;
+            height: 3px;
+            background-color: red;
+            position: relative;
+            left: 55px;
+        }
+
+        .foto {
+            width: 600px;
+            height: 350px;
+            background-size: cover;
+            position: absolute;
+            right: 100px;
+            margin-top: 200px;
+        }
+
+        .scrollUp {
+            font-size: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slide">
+        <div class="sl1Text">Scroll down</div>
+    </div>
+    <div class="slide2">
+        <div class="slLeft">"Slide from left"</div>
+        <div class="line"></div>
+        <div class="foto"
+            style="background-image: url(https://2.bp.blogspot.com/-7AsudJf676Y/V_sZQSm-RjI/AAAAAAAADQo/KKi2VLlnhjIRMUzrAlBvhcA12bqfRxuLgCEw/s1600/002.png);">
+        </div>
+    </div>
+    <div class="slide3">
+        <div class="scrollUp">Scroll up</div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
