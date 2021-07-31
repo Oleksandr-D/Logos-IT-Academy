@@ -209,7 +209,6 @@ input[type="checkbox"]:checked+span {
 
 form[name="form-table"] {
     display: flex;
-    display: flex;
     flex-wrap: wrap;
     align-content: space-between;
     align-items: center;
