@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+   
+}
+
+.block {
+    height: 400px;
+    border-radius: 5px;
+    background-color: lightgray;
+    margin: 10px 0;
+    padding: 20px;
+    position: relative;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.center-block {
+    text-align: center;
+}
+
+.btn-edit,
+.btn-style,
+.btn-add,
+.btn-save,
+.btn-text-color,
+.btn-bg-color,
+.btn-create-list,
+.btn-create-table {
+    width: 65px;
+    height: 30px;
+    background-color: yellow;
+    border-radius: 5px;
+}
+
+.btn-style {
+    background-color: blue;
+    color: white;
+}
+
+.btn-add {
+    background-color: red;
+    color: white;
+}
+
+.btn-save,
+.btn-create-list,
+.btn-create-table {
+    background-color: green;
+    color: white;
+}
+
+.btn-create-list,
+.btn-create-table {
+    width: 100px;
+}
+
+select,
+input[type="text"] {
+    width: 82%;
+    height: 35px;
+    border-radius: 5px;
+}
+
+#fontFamily {
+    width: 350px;
+    height: 30px;
+}
+
+textarea,
+input[type="button"],
+input[type="text"],
+select{
+outline: none;
+border: none;
+
+}
+
+
+textarea:focus,
+input[type="button"]:focus,
+input[type="text"]:focus,
+select:focus {
+    box-shadow: 0px 0px 6px 3px rgb(107, 192, 241);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 10px;
+}
+
+input[type="radio"]:checked+span,
+input[type="checkbox"]:checked+span {
+    color: blue;
+}
+
+.edit-block,
+.style-block {
+    display: none;
+}
+
+.f1 {
+    height: 215px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.f2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.btn-text-color,
+.btn-bg-color {
+    width: 100px;
+    background-color: lightslategray;
+    color: white;
+}
+
+.btn-bg-color {
+    width: 120px;
+    margin-left: 10px;
+}
+
+.form-color {
+    margin: 3px 0px 3px 0px;
+}
+
+.edit-area {
+    width: 100%;
+    height: 200px;
+    resize: none;
+}
+
+.colors,
+.bk-col {
+    width: 150px;
+    height: 150px;
+    outline: 1px solid black;
+    position: absolute;
+    top: 40px;
+    right: 300px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.color-box {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+}
+
+
+.tr-count,
+.td-count {
+    margin-left: 10%;
+}
+.textCount{
+    margin-left: 80px;
+}
+
+
+.width-td {
+    margin-left: 8%;
+}
+
+.height-td {
+    margin-left: 7.5%;
+}
+
+.wraper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#width-border,
+#type-border,
+#color-border {
+    width: 16.5%;
+    margin-left: 5%;
+    margin-right: 3%;
+}
+
+#type-border {
+    margin-left: 0%;
+}
+
+#color-border {
+    margin-left: 0%;
+}
+
+.typeOfmarks {
+    margin-left: 37px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.cursive {
+    font-style: italic;
+}
+
+.create-table {
+    height: 380px;
+    border-radius: 5px;
+    background-color: lightgray;
+    margin: 0px -20px;
+    padding: 20px;
+    position: relative;
+    display: flex;
+}
+
+form[name="form-table"] {
+    width: 950px;
+    height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    align-items: center;
+}
+form[name="form-list"]{
+    width: 900px;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.ad-st {
+    width: 100%;
+}
+
+.first,
+.second {
+    display: none;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
