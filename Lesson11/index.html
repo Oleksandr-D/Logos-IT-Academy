@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson11_jsCore</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quantico:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="dateAndTime">
+        <div class="date"></div>
+        <div class="time">12:00:00</div>
+    </div>
+    <div class="stopwatch">
+        <div class="dispwraper">
+            <div class="stopwatchDisplay">00:00:00:000</div>
+            <div class="stopwatchButtons">
+                <button id="startSw" onclick="startSw()">START</button>
+                <button onclick="loop()">LOOP</button>
+                <button onclick="stopSw()">STOP</button>
+                <button onclick="resetSw()">RESET</button>
+            </div>
+        </div>
+        <div class="loopDispWraper">
+            <div class="loopDisplay"></div>
+        </div>
+    </div>
+    <div class="countdown">
+        <div class="dispwraper">
+            <div class="minDisplay">25</div>
+            <div class="min">MINUTES</div>
+            <div class="setMin">
+                <button class="bb" onclick="plusCd()">+</button>
+                <button class="bb" onclick="minusCd()">-</button>
+            </div>
+        </div>
+        <div class="loopDispWraper">
+            <div class="countDisplay" style="display: flex;">00:00</div>
+            <div class="countDisplay2" style="display: none;">Time is up</div>
+            <div class="countButtons">
+                <button id="startCd" onclick="startCd()">START</button>
+                <button onclick="stopCd()">STOP</button>
+                <button onclick="resetCd()">RESET</button>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
