@@ -53,14 +53,9 @@
 //  Залиште в ньому тільки підмасиви.
 // let arr = [1, 'string', [3, 4], 5, [6, 7]];
 // Результат вивести в консоль.
-// let arr = [1, 'string', [3, 4], 5, [6, 7]];
-// let newArr=[];
-// arr.forEach(value => {
-//     if (Array.isArray(value)) {
-//         newArr.push(value);
-//     }
-// })
-// console.log(newArr);
+let arr = [1, 'string', [3, 4], 5, [6, 7]];
+let newArr = arr.filter(elem=>Array.isArray(elem));
+console.log(newArr);
 // ----------------------------------------------------------------
 
 
@@ -98,12 +93,12 @@
 //  Потім вийміть квадратний корінь і цих чисел. 
 //     let arr = [1, -2, 3, 0, 4, -5, 6, -11];
 // Результат вивести в консоль.
-let arr = [1, -2, 3, 0, 4, -5, 6, -11];
-let posNum = arr.reduce((accum, val) =>{
-    if (val >= 0){
-let res = Math.sqrt(val)
-accum.push(res);
-    }
-return accum;
-},[]);
-console.log(posNum);
+// let arr = [1, -2, 3, 0, 4, -5, 6, -11];
+// let posNum = arr.reduce((accum, val) =>{
+//     if (val >= 0){
+// let res = Math.sqrt(val)
+// accum.push(res);
+//     }
+// return accum;
+// },[]);
+// console.log(posNum);
