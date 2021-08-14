@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson13_jsCore</title>
+    <link rel="stylesheet" href="./Styles/styles.css">
+</head>
+
+<body>
+    <div class="conteiner1">
+        <form id="form">
+            <span class="header">Please sign up</span>
+            <input type="text" id="firstName" placeholder="FirstName" pattern="^[a-zA-Z]{2,20}$" required>
+            <input type="text" id="lastName" placeholder="Last Name" pattern="^[a-zA-Z]{2,20}$" required>
+            <input type="email" class="input" id="email" placeholder="Email" pattern="^[a-zA-Z0-9_.&#]+[^\s@]+@[^\s@]+[.][^\s@\W]{1,3}$" required>
+            <input type="password" id="password" placeholder="Password" pattern="^[a-zA-Z0-9]{8,15}$" required>
+            <span class="checkWrap"><input type="checkbox" id="check" required> I agree with Privacy Policy</span>
+            <input type="submit" value="signUp" id="signUp" disabled>
+        </form>
+    </div>
+    <form class="conteiner2 hide">
+        <div class="hedB">
+            <div class="icon"></div>
+        </div>
+        <div class="botom">
+            <span class="text1">Great!</span>
+            <span>Your account has been created successfully.</span>
+            <input type="submit" id="startExp" value="Start Exploring">
+        </div>
+    </form>
+    <script src="./script.js"></script>
+</body>
+
+</html>
