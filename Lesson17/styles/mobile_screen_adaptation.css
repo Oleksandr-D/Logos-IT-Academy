@@ -1,0 +1,269 @@
+@import url('./resetCss.css');
+
+@media screen and (max-width:1020px) {
+    .container {
+        width: 100%;
+        height: 100vh;
+        font-family: 'Arial Narrow Bold', sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .timerWraper {
+        width: 100%;
+        height: 30px;
+        margin-top: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .timer,
+    .timer2 {
+        font-size: 100%;
+    }
+
+    .buttonsWraper {
+        width: 90%;
+        height: 30px;
+        margin-top: 0%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    button {
+        width: 23%;
+        height: 20px;
+        background: linear-gradient(to right, rgb(255, 145, 1), rgb(255, 65, 65));
+        color: white;
+        border-radius: 10%;
+        outline: none;
+        font-size: 55%;
+        border: 0;
+        cursor: pointer;
+        transition-property: all;
+        transition-duration: 0.7s;
+    }
+
+    button:hover {
+        background: rgb(185, 41, 41);
+        box-shadow: 0 0 5px 1px rgb(255, 37, 37);
+        border: 1px solid white;
+    }
+
+    button:focus {
+        background: rgb(185, 41, 41);
+        border: 5px double white;
+        box-shadow: 0 0 5px 1px rgb(255, 37, 37);
+        transform: scale(1.1);
+    }
+
+    button:disabled {
+        background: rgba(185, 41, 41, 0.561);
+        border: 1px double white;
+        box-shadow: 0 0 5px 1px rgb(255, 37, 37);
+        transform: scale(1.1);
+    }
+
+    .blockWraper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        margin-top: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #rightBlock {
+        margin-top: 2px;
+        margin-left: 5px;
+        display: flex;
+    }
+
+    .puzzleBoxes {
+        width: 350px;
+        height: 350px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        box-shadow: 0 0 10px 10px rgb(255, 191, 191);
+        background: linear-gradient(to right, rgb(156, 156, 156), rgb(250, 250, 250));
+    }
+
+    .modalContainer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgb(255, 255, 255);
+        z-index: -1;
+    }
+
+    .modal,
+    .modal2 {
+        width: 500px;
+        height: 0px;
+        background-color: rgb(224, 224, 224);
+        position: absolute;
+        display: none;
+        cursor: pointer;
+        box-shadow: 0 0 50px 5px rgb(226, 225, 225);
+        border-radius: 10px;
+        z-index: 99;
+    }
+
+    .modalWraper {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .mesage,
+    .mesage2 {
+        width: 100%;
+        box-shadow: 0 0 10px 0px rgb(255 21 21);
+        font-weight: bolder;
+        font-size: 30px;
+        text-align: center;
+        line-height: 160%;
+        background-color: rgb(253, 135, 81);
+    }
+
+    .messageButtonWrap {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 1%;
+    }
+
+    #close,
+    #check {
+        width: 30%;
+        height: 50px;
+        font-size: 25px;
+
+    }
+
+    #close:hover,
+    #check:hover {
+        transform: scale(1.1);
+    }
+
+    .timer3 {
+        font-size: 40px;
+        font-size: 40px;
+        margin-top: 23px;
+        margin-bottom: 40px;
+    }
+
+    .iconWin {
+        background-image: url('./Win1.png');
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        margin-bottom: 1%;
+        margin-top: 1%;
+    }
+
+    .iconLost {
+        background-image: url('./lost.png');
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        margin-bottom: 1%;
+        margin-top: 1%;
+    }
+
+    .puzzle {
+        width: 87.5px;
+        height: 87.5px;
+        display: flex;
+        color: rgba(0, 0, 255, 0);
+        background-image: url('./scale_380.jpg');
+    }
+
+    .puzzle:hover {
+        cursor: grabbing;
+    }
+
+    .active {
+        box-shadow: 0 0 20px 10px rgb(0, 0, 0);
+    }
+
+    .p1 {
+        background-position: -30px -5px;
+    }
+
+    .p2 {
+        background-position: -117.5px -5px;
+    }
+
+    .p3 {
+        background-position: -205px -5px;
+    }
+
+    .p4 {
+        background-position: -292.5px -5px;
+    }
+
+    .p5 {
+        background-position: -30px -93px;
+    }
+
+    .p6 {
+        background-position: -117.5px -93px;
+    }
+
+    .p7 {
+        background-position: -205px -93px;
+    }
+
+    .p8 {
+        background-position: -292.5px -93px;
+    }
+
+    .p9 {
+        background-position: -30px -180px;
+    }
+
+    .p10 {
+        background-position: -117.5px -180px;
+    }
+
+    .p11 {
+        background-position: -205px -180px;
+    }
+
+    .p12 {
+        background-position: -295.5px -180px;
+    }
+
+    .p13 {
+        background-position: -30px -267.5px;
+    }
+
+    .p14 {
+        background-position: -117.5px -267.5px;
+    }
+
+    .p15 {
+        background-position: -205px -267.5px;
+    }
+
+    .p16 {
+        background-position: -295.5px -267.5px;
+    }
+
+    .hide {
+        display: none;
+    }
+}

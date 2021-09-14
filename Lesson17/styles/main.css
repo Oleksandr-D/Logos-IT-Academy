@@ -1,0 +1,276 @@
+@import url('./resetCss.css');
+
+body {
+    background-image: url('./fon.jpg');
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('./fon.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.timerWraper {
+    width: 400px;
+    height: 100px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer,
+.timer2 {
+    font-size: 80px;
+    color: white;
+}
+
+.buttonsWraper {
+    width: 600px;
+    height: 50px;
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    width: 165px;
+    height: 40px;
+    background: linear-gradient(to right, rgb(255, 145, 1), rgb(255, 65, 65));
+    color: white;
+    border-radius: 10px;
+    outline: none;
+    font-size: 20px;
+    border: 0;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition-property: all;
+    transition-duration: 0.7s;
+}
+
+button:hover {
+    background: rgb(185, 41, 41);
+    box-shadow: 0 0 10px 5px rgb(255, 37, 37);
+    border: 2px solid white;
+}
+
+button:focus {
+    background: rgb(185, 41, 41);
+    border: 5px double white;
+    box-shadow: 0 0 10px 5px rgb(255, 37, 37);
+    transform: scale(1.1);
+}
+
+button:disabled {
+    background: rgba(185, 41, 41, 0.561);
+    border: 5px double white;
+    box-shadow: 0 0 10px 5px rgb(255, 37, 37);
+    transform: scale(1.1);
+}
+
+.blockWraper {
+    width: 1000px;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.puzzleBoxes {
+    width: 450px;
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    box-shadow: 0 0 20px 10px rgb(255, 230, 230);
+    background: linear-gradient(to right, rgb(156, 156, 156), rgb(250, 250, 250));
+}
+
+.modalContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(255, 255, 255);
+    z-index: -1;
+}
+
+.modal,
+.modal2 {
+    width: 500px;
+    height: 0px;
+    background-color: rgb(224, 224, 224);
+    position: absolute;
+    display: none;
+    cursor: pointer;
+    box-shadow: 0 0 50px 5px rgb(226, 225, 225);
+    border-radius: 10px;
+    z-index: 99;
+}
+
+.modalWraper {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mesage,
+.mesage2 {
+    width: 100%;
+    box-shadow: 0 0 20px 0px rgb(255 21 21);
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: center;
+    line-height: 160%;
+    background-color: rgb(253, 135, 81);
+}
+
+.messageButtonWrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+#close,
+#check {
+    width: 160px;
+    height: 60px;
+}
+
+#close:hover,
+#check:hover {
+    transform: scale(1.3);
+}
+
+.timer3 {
+    font-size: 40px;
+    font-size: 40px;
+    margin-top: 23px;
+    margin-bottom: 40px;
+}
+
+.iconWin {
+    background-image: url('./Win1.png');
+    width: 180px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.iconLost {
+    background-image: url('./lost.png');
+    width: 180px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.puzzle {
+    width: 112.5px;
+    height: 112.5px;
+    display: flex;
+    color: rgba(0, 0, 255, 0);
+    background-image: url('./scale_480х500.jpg');
+}
+
+.puzzle:hover {
+    cursor: grabbing;
+}
+
+.active {
+    box-shadow: 0 0 20px 10px rgb(0, 0, 0);
+}
+
+.p1 {
+    background-position: 940px -5px;
+}
+
+.p2 {
+    background-position: 827.5px -5px;
+}
+
+.p3 {
+    background-position: 715px -5px;
+}
+
+.p4 {
+    background-position: 602.5px -5px;
+}
+
+.p5 {
+    background-position: 940px -117.5px;
+}
+
+.p6 {
+    background-position: 827.5px -117.5px;
+}
+
+.p7 {
+    background-position: 715px -117.5px;
+}
+
+.p8 {
+    background-position: 602.5px -117.5px;
+}
+
+.p9 {
+    background-position: 940px -230px;
+}
+
+.p10 {
+    background-position: 827.5px -230px;
+}
+
+.p11 {
+    background-position: 715px -230px;
+}
+
+.p12 {
+    background-position: 602.5px -230px;
+}
+
+.p13 {
+    background-position: 940px -342.5px;
+}
+
+.p14 {
+    background-position: 827.5px -342.5px;
+}
+
+.p15 {
+    background-position: 715px -342.5px;
+}
+
+.p16 {
+    background-position: 602.5px -342.5px;
+}
+
+#rightBlock {
+    display: flex;
+
+}
+
+.hide {
+    display: none;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson17_jsCore</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/mobile_screen_adaptation.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="timerWraper">
+            <div class="timer">02:00</div>
+            <div class="timer2" style="display:none;">00:00</div>
+        </div>
+        <div class="buttonsWraper">
+            <button id="start">Start game!</button>
+            <button id="checkResult" disabled>Check result</button>
+            <button id="newGame">New game</button>
+        </div>
+        <div class="blockWraper">
+            <div id="leftBlock" class="puzzleBoxes">
+                <div class="puzzle p1">1</div>
+                <div class="puzzle p2">2</div>
+                <div class="puzzle p3">3</div>
+                <div class="puzzle p4">4</div>
+                <div class="puzzle p5">5</div>
+                <div class="puzzle p6">6</div>
+                <div class="puzzle p7">7</div>
+                <div class="puzzle p8">8</div>
+                <div class="puzzle p9">9</div>
+                <div class="puzzle p10">10</div>
+                <div class="puzzle p11">11</div>
+                <div class="puzzle p12">12</div>
+                <div class="puzzle p13">13</div>
+                <div class="puzzle p14">14</div>
+                <div class="puzzle p15">15</div>
+                <div class="puzzle p16">16</div>
+            </div>
+            <div id="rightBlock" class="puzzleBoxes"></div>
+        </div>
+        <div class="modalContainer">
+            <div class="modal">
+                <div class="modalWraper">
+                    <span class="mesage"></span>
+                    <div class="timer3">02:00</div>
+                    <div class="iconWin hide"></div>
+                    <div class="iconLost hide"></div>
+                    <div class="messageButtonWrap">
+                        <button id="close" disabled>Close</button>
+                        <button id="check" disabled>Chek!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./query-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
