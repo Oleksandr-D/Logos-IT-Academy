@@ -1,0 +1,26 @@
+@mixin conteiner ($w, $h) {
+    width: $w;
+    height: $h;
+}
+@mixin header_foto ($w, $h) {
+    width: $w;
+    height: $h;
+}
+@mixin foto_blocks_dreamshare ($w, $h){
+    width: $w;
+    height: $h;
+}
+@mixin foto_buttons ($w, $h)
+{
+    width: $w;
+    height: $h;
+}
+@mixin partner_blocks ($w, $h)
+{
+    width: $w;
+    height: $h;
+}
+@mixin image_blocks ($w, $h){
+    width: $w;
+    height: $h;
+}
