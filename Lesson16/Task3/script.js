@@ -5,59 +5,44 @@
 // — використовуйте jQuery easing для плавності анімації
 
 $(function () {
+    let topPosition; //keep the original position of the box
+    let leftPosition;
     //click on the colored squares
-    let modWind = $('.modalW');
     $('.box').on('click', function () {
         $('.modalWraper').css({
             zIndex: 3
-        });
-        $('.modalWraper').animate({
+        }).animate({
             backgroundColor: 'rgba(102, 102, 102, 0.822)'
         }, 500);
         $(this).css({
             opacity: 0
         });
-        modWind.css('background-color', $(this).css('background-color'));
-        modWind.css('top', $(this).css('top'));
-        modWind.css('left', $(this).css('left'));
-        modWind.show().animate({
-            top: (window.innerHeight - modWind.height()) / 6,
-            left: (window.innerWidth - modWind.width()) / 3,
+        topPosition = $(this).offset().top;
+        leftPosition = $(this).offset().left;
+        $('.modalW').css({
+            top: topPosition,
+            left: leftPosition,
+            backgroundColor: $(this).css('background-color'),
+            display: 'block'
+        }).animate({
+            top: (window.innerHeight - 500) / 2,
+            left: (window.innerWidth - 500) / 2,
             width: '500px',
             height: '500px'
         }, 1000, 'easeOutBack')
-
-
     })
     //modal window
-    //при кліку на модальне вікно як зробити перміщення (політ) квадратів як на відео,
-    //  із центру на свою позицію?
-    modWind.on('click', function () {
-        // modWind.css('top', (window.innerHeight - modWind.height()) / 6);
-        // modWind.css('left', (window.innerWidth - modWind.width()) / 3);
-        $('.box').each(function (ind, elem) {
-            // let ff = $(`.conteiner:eq(${ind} .box`).css()
-            if (elem.style.opacity == 0) {
-                modWind.css('top', $(this).css('top'));
-                modWind.css('left', $(this).css('left'));
-                // modWind.animate({
-                //     top:$(this),
-                //     left:$(this)
-                // },100)
-                
-            }
-        })
-        
+    $('.modalW').on('click', function () {
         $(this).animate({
             width: '175px',
             height: '175px',
-            marginTop: '11px'
+            top: topPosition,
+            left: leftPosition
         }, 1000, 'easeInOutQuad', function () {
-            modWind.hide()
+            $('.modalW').hide();
             $('.modalWraper').animate({
                 backgroundColor: 'rgb(255, 255, 255)'
-            }, 500);
-            $('.modalWraper').css({
+            }, 500).css({
                 zIndex: -1
             })
             $('.box').css({
