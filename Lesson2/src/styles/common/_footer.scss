@@ -1,0 +1,75 @@
+.bottom {
+    width: 1440px;
+    height: 224px;
+    left: calc(50% - 1440px/2);
+    bottom: 36px;
+    border-top: 2px solid $buttons_wraper;
+    margin: auto;
+    margin-top: 111px;
+    display: flex;
+
+    .wraper_bottom {
+        @include conteiner (100%, 100%);
+        width: 65%;
+        height: 65%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: auto;
+
+        .footer_logo {
+            color: $buttons_wraper;
+            @extend %font-list;
+            width: 119px;
+            height: 20px;
+        }
+
+        .company {
+            @extend %font-list;
+            width: 114px;
+            height: 100%;
+            font-size: 14px;
+            line-height: 17px;
+            color: $second_text_color;
+
+            .company_list {
+                font-family: $second_text_font;
+                color: #999999;
+                margin-top: 10px;
+            }
+        }
+
+        .partners {
+            @extend %font-list;
+            color: $second_text_color;
+            width: 64px;
+            height: 17px;
+            margin-right: 187px;
+        }
+
+        .designed {
+            @extend %font-list;
+            width: 92px;
+            height: 100%;
+            display: flex;
+            letter-spacing: 1px;
+            font-size: 9px;
+            line-height: 12px;
+            color: #CCCCCC;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-content: flex-end;
+            justify-content: flex-start;
+            align-items: flex-end;
+
+        }
+
+        .designed_icon {
+            background-image: url('../images/Bitmap.png');
+            width: 110px;
+            height: 24px;
+            background-size: cover;
+            margin-top: 7px;
+        }
+    }
+}

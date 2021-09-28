@@ -1,0 +1,107 @@
+.conteiner {
+    @include conteiner (99%, 100%);
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+}
+%font-list {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: $main-text-color;
+}
+.header_foto {
+    background-image: url('../../images/Headaer_and_Promo.jpg');
+    @include header_foto (1440px, 700px);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.nav_menu {
+    width: 1440px;
+    height: 74px;
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-end;
+}
+.logo {
+    @extend %font-list;
+    width: 152px;
+    height: 24px;
+    align-self: flex-end;
+    font-size: 121%;
+    margin-right: 5%;
+}
+.nav_items {
+    color: #fff;
+    display: flex;
+    width: 15%;
+    height: 38%;
+    align-self: flex-end;
+    align-items: center;      
+}
+button {
+    color: #fff;
+    background: none;
+    border: none;
+    align-self: flex-end;
+    font-size: 100%;
+    padding: 8px 21px 8px 20px;
+}
+button:hover {
+    color: #fff;
+    background: transparent;
+    border-radius: 50px;
+    border-color: $main-text-color;
+    border-style: solid;
+    padding: 7px 18px 7px 18px;
+}
+.main_info {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+}
+.main_info_conteiner {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.mein_text {
+    @extend %font-list;
+    width: 470px;
+    height: 126px;
+    font-size: 52px;
+    line-height: 63.39px;
+    text-align: center;
+    margin-top: -8px;
+}
+.second_text {
+    width: 396px;
+    height: 25px;
+    font-family: $second_text_font;
+    font-size: 24px;
+    color: $main-text-color;
+    text-align: center;
+    margin-top: 28px;
+}
+.wraper_find_your_holiday {
+    width: 225px;
+    height: 40px;
+    background: $buttons_wraper;
+    border-radius: $buttons_border_radius;
+    display: flex;
+    margin-top: 34px;
+}
+.find_your_holiday {
+    width: 187px;
+    height: 17px;
+    @extend %font-list;
+    font-size: 14px;
+    line-height: 17.07px;
+    color: $main-text-color;
+    text-align: center;
+    margin: auto;
+}
